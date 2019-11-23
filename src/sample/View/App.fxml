@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AppController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="orderTab" text="Order" />
+          <Tab fx:id="transactionTab" text="Transactions" />
+            <Tab fx:id="overviewTab" text="Overview" />
+            <Tab fx:id="newCustomerTab" text="New Customer" />
+            <Tab fx:id="newEmployeeTab" text="New Employee" />
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.OrderController">
+   <children>
+      <Label fx:id="totalLabel" layoutX="567.0" layoutY="453.0" prefHeight="34.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF;" text="Total: ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <JFXComboBox fx:id="selectCustomerBox" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="170.0" promptText="Select Customer" />
+      <JFXComboBox fx:id="selectPaymentTypeBox" layoutX="197.0" layoutY="14.0" prefHeight="25.0" prefWidth="170.0" promptText="Select Payment Type" />
+      <TableView fx:id="txnsTable" layoutX="567.0" layoutY="34.0" prefHeight="411.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="itemColumn" prefWidth="125.0" text="Item" />
+          <TableColumn fx:id="priceColumn" prefWidth="75.0" text="Price" />
+        </columns>
+      </TableView>
+      <FlowPane layoutX="8.0" layoutY="42.0" prefHeight="363.0" prefWidth="429.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <JFXButton fx:id="itemOneButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="107.0" prefWidth="99.0" style="-fx-background-color: #FFFFFF;" text="Animal Fries">
+               <graphic>
+                  <ImageView fitHeight="92.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/005-chicken-2.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemTwoButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="129.0" prefWidth="116.0" style="-fx-background-color: #FFFFFF;" text="The Sammich">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/001-food.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemThreeButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="107.0" prefWidth="99.0" style="-fx-background-color: #FFFFFF;" text="Tenders Basket">
+               <graphic>
+                  <ImageView fitHeight="92.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/003-chicken.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemFourButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="129.0" prefWidth="116.0" style="-fx-background-color: #FFFFFF;" text="Tenders">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/004-chicken-1.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemFiveButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="107.0" prefWidth="99.0" style="-fx-background-color: #FFFFFF;" text="Fries">
+               <graphic>
+                  <ImageView fitHeight="92.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/002-fast-food.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemSixButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="129.0" prefWidth="116.0" style="-fx-background-color: #FFFFFF;" text="Micos Sauce">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/006-fast-food-1.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemSevenButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="107.0" prefWidth="99.0" style="-fx-background-color: #FFFFFF;" text="Slaw">
+               <graphic>
+                  <ImageView fitHeight="92.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/vegan.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemEightButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="129.0" prefWidth="116.0" text="Bottled Water">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/Bottled%20Water%20Final.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemNineButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="107.0" prefWidth="99.0" text="Topo Chico">
+               <graphic>
+                  <ImageView fitHeight="92.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/Topo%20Chico%20Final.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemTenButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="129.0" prefWidth="116.0" text="Coke">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/Coke.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemElevenButton" alignment="TOP_LEFT" contentDisplay="BOTTOM" prefHeight="129.0" prefWidth="116.0" text="Sprite">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/Thanh%20Sprite%20Final.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </FlowPane>
+      <JFXTextField fx:id="itemCountField" layoutX="392.0" layoutY="72.0" prefHeight="25.0" prefWidth="114.0" promptText="xItem">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="addOrderButton" layoutX="392.0" layoutY="269.0" prefHeight="218.0" prefWidth="114.0" style="-fx-background-color: #efefef;" text="Add Order">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="removeItemButton" layoutX="395.0" layoutY="159.0" prefHeight="100.0" prefWidth="108.0" style="-fx-background-color: #efefef;" text="Remove Item">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <Label fx:id="BANKIN" layoutX="642.0" layoutY="453.0" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #FFFFFF;" text="\$$$">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

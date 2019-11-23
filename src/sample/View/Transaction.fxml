@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.TransactionController">
+   <children>
+      <TableView fx:id="viewTable" layoutX="26.0" layoutY="43.0" prefHeight="423.0" prefWidth="748.0">
+         <columns>
+            <TableColumn fx:id="orderIdColumn" prefWidth="54.0" text="Order ID" />
+            <TableColumn fx:id="customerColumn" prefWidth="66.0" text="Customer" />
+            <TableColumn fx:id="employeeColumn" prefWidth="61.0" text="Employee" />
+            <TableColumn fx:id="orderItemsColumn" prefWidth="297.0" text="Order Items" />
+            <TableColumn fx:id="orderTotalColumn" prefWidth="90.0" text="Order Total" />
+            <TableColumn fx:id="paymTypeColumn" prefWidth="33.0" text="PT" />
+            <TableColumn fx:id="orderDateColumn" prefWidth="146.0" text="Order Date" />
+         </columns></TableView>
+   </children>
+</AnchorPane>
